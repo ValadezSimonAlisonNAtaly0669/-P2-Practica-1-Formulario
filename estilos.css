@@ -4,8 +4,8 @@ body {
 	margin: 0;
 	padding: 0;
 }
-div.barrita {
-	background-color: #e39197;
+div.barrita { /*para mi clase llamada barrita*/
+	background-color: #e39197; 
 	color: white;
 	padding: 8px 0;
 	font-size: 14px;
@@ -34,7 +34,7 @@ ul li a {
 	padding: 14px 25px;
 	text-decoration: none;
 	white-space: nowrap;
-	font-weight: bold;
+	font-weight: bold; /*para que todo se quede en una fila*/
 }
 ul li a:hover {
 	color: #d18296;
@@ -50,10 +50,10 @@ button {
 	color: #6b5258;
 	padding: 5px 10px;
 	margin: 2px;
-	font-family: inherit;
-	cursor: pointer;
+	font-family: inherit;/*para que copie la font del body*/
+	cursor: pointer;/*hace que el cursor, cuando pasa por encima, se convierta en manita*/
 }
-table.tabla-productos {
+table.tabla-productos { 
 	border-spacing: 15px;
 }
 table.tabla-productos td {
@@ -68,7 +68,7 @@ footer {
 	margin-top: 40px;
 }
 footer table {
-	border-spacing: 0;
+	border-spacing: 0;/*no espacio entre celdas*/
 }
 footer td {
 	border: none;
@@ -89,7 +89,7 @@ body.body-login {
 	background-color: #fff6f8;
 	padding: 40px 10px;
 }
-div.caja-login {
+div.caja-login {/*le da estilo a la caja blanca donde está el formulario*/
 	width: 360px;
 	margin: 0 auto;
 }
@@ -101,7 +101,7 @@ p.subtitulo {
 	color: #777;
 	margin-top: 0;
 }
-button.btn-shop {
+button.btn-shop { /*es para el botón morado de ir a la tienda.*/
 	width: 100%;
 	background-color: #5a31f4;
 	color: white;
@@ -111,7 +111,7 @@ button.btn-shop {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-button.btn-google {
+button.btn-google {/*es para el botón de acceso rápido con Google.*/
 	width: 100%;
 	background-color: #ffffff;
 	color: #333;
@@ -122,23 +122,23 @@ button.btn-google {
 }
 p.divisor {
 	border-bottom: 1px solid #eee;
-	line-height: 0.1em;
+	line-height: 0.1em;/*aplasta el alto para que la palabra se acomode en el mero centro de la línea.*/
 	margin: 25px 0;
 }
-p.divisor span {
+p.divisor span { /*Es para la 'O'*/
 	background: #fff6f8;
 	padding: 0 10px;
 	color: #aaa;
 }
 div.caja-login input[type="email"], 
-div.caja-login input[type="password"] {
+div.caja-login input[type="password"] {/*le da diseño a las cajitas donde escribes tu correo y clave.*/
 	width: 90%;
 	padding: 12px;
 	border: 1.5px solid #f8c2cb;
 	border-radius: 8px;
 	font-size: 14px;
 }
-button.btn-login-enviar {
+button.btn-login-enviar {/*es el botón rosa de enviar el formulario.*/
 	background-color: #e89ba5;
 	color: white;
 	border: none;
@@ -146,7 +146,7 @@ button.btn-login-enviar {
 	border-radius: 6px;
 	font-size: 15px;
 }
-p.texto-chico {
+p.texto-chico {/*para textos secundarios*/
 	font-size: 12px;
 	color: #888;
 }
