@@ -1,5 +1,5 @@
-<?php
-session_start();
+<?php //abre la "memoria" del navegador para revisar los datos de la sesión del usuario.
+session_start();//es un ⁠if⁠ que pregunta: "¿existe o está guardado el apodo en la sesión?
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,8 +22,13 @@ session_start();
 			<button>MEXICO (USD $) ∨</button>
 		</div>
 		<!-- para que muestre el apodo, yea-->
+		<!-- 2: Si el ⁠if⁠ dice que sí existe (o sea, ya inició sesión), muestra el emoji de la persona y con ⁠echo⁠ imprime su apodo en la pantalla.-->
+  <!-- 3: ⁠<a href="cerrar_sesion.php"><button>Salir</button></a>⁠: al lado de su apodo le pone un botón que dice "Salir" para mandar llamar al archivo que borra la sesión.-->
+  <!-- 4: else: si el if dice que no existe... -->
+		<!-- 5: <a href="login.php"><button>Acceder</button></a>⁠: ...en lugar de mostrar su nombre, le pone el botón que dice "Acceder" para mandarlo a la pantalla de inicio de sesión-->
+  <!-- 6: endif; ?>⁠: marca el final de toda esa condición del ⁠if-->
 		<div align="right">
-			<?php if (isset($_SESSION['apodo'])): ?>
+			<?php if (isset($_SESSION['apodo'])): ?> 
 				<span>👤 <?php echo $_SESSION['apodo']; ?></span>
 				<a href="cerrar_sesion.php"><button>Salir</button></a>
 			<?php else: ?>
